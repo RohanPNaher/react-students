@@ -1,8 +1,10 @@
 import './App.css';
+import { useState } from 'react';
 import Students from './Students';
 
+
 function App() {
-  const studentList = [
+  const [studentList, setStudentList] = useState([
     {
       name: 'Cait Yomorta',
       bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus placeat nostrum explicabo? Voluptatibus expedita saepe officia optio, commodi totam ratione laudantium ipsum porro molestias, quasi nulla minus vitae laboriosam corrupti Delectus inventore explicabo est odit incidunt rem a recusandae eum pariatur. Aperiam doloremque blanditiis harum voluptate animi fugit beatae asperiores quo, dignissimos sed illum veniam eum accusantium nulla quod voluptatum',
@@ -61,7 +63,7 @@ function App() {
         }
       ]
     }
-  ]
+  ])
 
   return (
     <div className="App">
